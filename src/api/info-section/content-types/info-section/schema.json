@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "info_sections",
+  "info": {
+    "singularName": "info-section",
+    "pluralName": "info-sections",
+    "displayName": "Info Section",
+    "description": "Section header for the information block (#Info)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "meat_categories_sections",
+  "info": {
+    "singularName": "meat-categories-section",
+    "pluralName": "meat-categories-sections",
+    "displayName": "Meat Categories Section",
+    "description": "Section header for product categories (#products)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

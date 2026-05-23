@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_page_metas",
+  "info": {
+    "singularName": "home-page-meta",
+    "pluralName": "home-page-metas",
+    "displayName": "Home Page Meta",
+    "description": "Landing page title, meta description, and SEO"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "googleAnalyticsId": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_abouts",
+  "info": {
+    "singularName": "home-about",
+    "pluralName": "home-abouts",
+    "displayName": "Home About",
+    "description": "About section (#About) on the landing page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mainImageAlt": {
+      "type": "string"
+    },
+    "overlayValue": {
+      "type": "string"
+    },
+    "overlayLabel": {
+      "type": "string"
+    }
+  }
+}

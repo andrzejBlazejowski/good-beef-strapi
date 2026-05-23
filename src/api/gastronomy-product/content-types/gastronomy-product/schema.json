@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gastronomy_products",
+  "info": {
+    "singularName": "gastronomy-product",
+    "pluralName": "gastronomy-products",
+    "displayName": "Gastronomy Product",
+    "description": "B2B product card in the gastronomy section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "priceLabel": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

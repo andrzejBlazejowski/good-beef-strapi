@@ -4,25 +4,27 @@
   "info": {
     "singularName": "slider-slide",
     "pluralName": "slider-slides",
-    "displayName": "slider_slide"
+    "displayName": "Slider Slide",
+    "description": "Hero carousel slide on the landing page"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Text": {
-      "type": "string"
+    "title": {
+      "type": "text",
+      "required": true
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

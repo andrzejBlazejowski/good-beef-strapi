@@ -573,6 +573,273 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactCtaContactCta extends Struct.SingleTypeSchema {
+  collectionName: 'contact_ctas';
+  info: {
+    description: 'Call-to-action banner with phone (#contact)';
+    displayName: 'Contact CTA';
+    pluralName: 'contact-ctas';
+    singularName: 'contact-cta';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-cta.contact-cta'
+    > &
+      Schema.Attribute.Private;
+    phoneLink: Schema.Attribute.String;
+    phoneNumber: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactInfoBoxContactInfoBox
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_info_boxes';
+  info: {
+    description: 'Contact detail box (address, phone, email)';
+    displayName: 'Contact Info Box';
+    pluralName: 'contact-info-boxes';
+    singularName: 'contact-info-box';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    iconClass: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-info-box.contact-info-box'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    type: Schema.Attribute.Enumeration<['address', 'phone', 'email']> &
+      Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFaqItemFaqItem extends Struct.CollectionTypeSchema {
+  collectionName: 'faq_items';
+  info: {
+    description: 'Single FAQ accordion entry';
+    displayName: 'FAQ Item';
+    pluralName: 'faq-items';
+    singularName: 'faq-item';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    answer: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    defaultOpen: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::faq-item.faq-item'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    question: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFaqSectionFaqSection extends Struct.SingleTypeSchema {
+  collectionName: 'faq_sections';
+  info: {
+    description: 'FAQ section header and decorative images (#FAQ)';
+    displayName: 'FAQ Section';
+    pluralName: 'faq-sections';
+    singularName: 'faq-section';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::faq-section.faq-section'
+    > &
+      Schema.Attribute.Private;
+    mainImage: Schema.Attribute.Media<'images'>;
+    mainImageAlt: Schema.Attribute.String;
+    overlayImage: Schema.Attribute.Media<'images'>;
+    overlayImageAlt: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFeatureFeature extends Struct.CollectionTypeSchema {
+  collectionName: 'features';
+  info: {
+    description: 'Feature card in the features strip (Pewne \u017Ar\u00F3d\u0142o, Wolny opas, etc.)';
+    displayName: 'Feature';
+    pluralName: 'features';
+    singularName: 'feature';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    iconClass: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::feature.feature'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFooterFooter extends Struct.SingleTypeSchema {
+  collectionName: 'footers';
+  info: {
+    description: 'Site footer copyright and branding';
+    displayName: 'Footer';
+    pluralName: 'footers';
+    singularName: 'footer';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    brandName: Schema.Attribute.String & Schema.Attribute.Required;
+    brandUrl: Schema.Attribute.String;
+    copyrightSuffix: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer.footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    year: Schema.Attribute.Integer;
+  };
+}
+
+export interface ApiGastronomyProductGastronomyProduct
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'gastronomy_products';
+  info: {
+    description: 'B2B product card in the gastronomy section';
+    displayName: 'Gastronomy Product';
+    pluralName: 'gastronomy-products';
+    singularName: 'gastronomy-product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'>;
+    imageAlt: Schema.Attribute.String;
+    imageUrl: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::gastronomy-product.gastronomy-product'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    priceLabel: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiGastronomySectionGastronomySection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'gastronomy_sections';
+  info: {
+    description: 'Section header and CTAs for B2B products (#ForRestaurants)';
+    displayName: 'Gastronomy Section';
+    pluralName: 'gastronomy-sections';
+    singularName: 'gastronomy-section';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    emailButton: Schema.Attribute.Component<'landing.cta-button', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::gastronomy-section.gastronomy-section'
+    > &
+      Schema.Attribute.Private;
+    phoneButton: Schema.Attribute.Component<'landing.cta-button', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -605,10 +872,315 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHomeAboutHomeAbout extends Struct.SingleTypeSchema {
+  collectionName: 'home_abouts';
+  info: {
+    description: 'About section (#About) on the landing page';
+    displayName: 'Home About';
+    pluralName: 'home-abouts';
+    singularName: 'home-about';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    content: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-about.home-about'
+    > &
+      Schema.Attribute.Private;
+    mainImage: Schema.Attribute.Media<'images'>;
+    mainImageAlt: Schema.Attribute.String;
+    overlayLabel: Schema.Attribute.String;
+    overlayValue: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomePageMetaHomePageMeta extends Struct.SingleTypeSchema {
+  collectionName: 'home_page_metas';
+  info: {
+    description: 'Landing page title, meta description, and SEO';
+    displayName: 'Home Page Meta';
+    pluralName: 'home-page-metas';
+    singularName: 'home-page-meta';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    googleAnalyticsId: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::home-page-meta.home-page-meta'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiInfoArticleInfoArticle extends Struct.CollectionTypeSchema {
+  collectionName: 'info_articles';
+  info: {
+    description: 'Information section card (shipping, slaughter process, etc.)';
+    displayName: 'Info Article';
+    pluralName: 'info-articles';
+    singularName: 'info-article';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'>;
+    imageAlt: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::info-article.info-article'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiInfoSectionInfoSection extends Struct.SingleTypeSchema {
+  collectionName: 'info_sections';
+  info: {
+    description: 'Section header for the information block (#Info)';
+    displayName: 'Info Section';
+    pluralName: 'info-sections';
+    singularName: 'info-section';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::info-section.info-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMeatCategoriesSectionMeatCategoriesSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'meat_categories_sections';
+  info: {
+    description: 'Section header for product categories (#products)';
+    displayName: 'Meat Categories Section';
+    pluralName: 'meat-categories-sections';
+    singularName: 'meat-categories-section';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::meat-categories-section.meat-categories-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMeatCategoryMeatCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'meat_categories';
+  info: {
+    description: 'Product category card (Ciel\u0119cina, Wo\u0142owina, Burgery)';
+    displayName: 'Meat Category';
+    pluralName: 'meat-categories';
+    singularName: 'meat-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'>;
+    imageAlt: Schema.Attribute.String;
+    link: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::meat-category.meat-category'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRecommendedProductRecommendedProduct
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'recommended_products';
+  info: {
+    description: 'Retail product card in the recommended products section';
+    displayName: 'Recommended Product';
+    pluralName: 'recommended-products';
+    singularName: 'recommended-product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    buyButtonLabel: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Kup teraz'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'>;
+    imageAlt: Schema.Attribute.String;
+    lightboxImage: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::recommended-product.recommended-product'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    priceLabel: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    shopUrl: Schema.Attribute.String & Schema.Attribute.Required;
+    showBuyButton: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRecommendedProductsSectionRecommendedProductsSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'recommended_products_sections';
+  info: {
+    description: 'Section header and CTA for retail products (#prices)';
+    displayName: 'Recommended Products Section';
+    pluralName: 'recommended-products-sections';
+    singularName: 'recommended-products-section';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::recommended-products-section.recommended-products-section'
+    > &
+      Schema.Attribute.Private;
+    moreButton: Schema.Attribute.Component<'landing.cta-button', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    subTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSiteHeaderSiteHeader extends Struct.SingleTypeSchema {
+  collectionName: 'site_headers';
+  info: {
+    description: 'Header logo, top bar contact info, and navigation';
+    displayName: 'Site Header';
+    pluralName: 'site-headers';
+    singularName: 'site-header';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::site-header.site-header'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
+    logoAlt: Schema.Attribute.String;
+    mapLinkLabel: Schema.Attribute.String;
+    mapLinkUrl: Schema.Attribute.String;
+    navLinks: Schema.Attribute.Component<'landing.nav-link', true>;
+    phoneNumber: Schema.Attribute.String;
+    phonePrefix: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSliderSlideSliderSlide extends Struct.CollectionTypeSchema {
   collectionName: 'slider_slides';
   info: {
-    displayName: 'slider_slide';
+    description: 'Hero carousel slide on the landing page';
+    displayName: 'Slider Slide';
     pluralName: 'slider-slides';
     singularName: 'slider-slide';
   };
@@ -619,18 +1191,53 @@ export interface ApiSliderSlideSliderSlide extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::slider-slide.slider-slide'
     > &
       Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     publishedAt: Schema.Attribute.DateTime;
-    Text: Schema.Attribute.String;
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiStatCounterStatCounter extends Struct.CollectionTypeSchema {
+  collectionName: 'stat_counters';
+  info: {
+    description: 'Animated statistic in the fact counter section';
+    displayName: 'Stat Counter';
+    pluralName: 'stat-counters';
+    singularName: 'stat-counter';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    animationFrom: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<1>;
+    animationSpeed: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<5000>;
+    animationTo: Schema.Attribute.Integer;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::stat-counter.stat-counter'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    value: Schema.Attribute.Integer & Schema.Attribute.Required;
   };
 }
 
@@ -1149,8 +1756,26 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::contact-cta.contact-cta': ApiContactCtaContactCta;
+      'api::contact-info-box.contact-info-box': ApiContactInfoBoxContactInfoBox;
+      'api::faq-item.faq-item': ApiFaqItemFaqItem;
+      'api::faq-section.faq-section': ApiFaqSectionFaqSection;
+      'api::feature.feature': ApiFeatureFeature;
+      'api::footer.footer': ApiFooterFooter;
+      'api::gastronomy-product.gastronomy-product': ApiGastronomyProductGastronomyProduct;
+      'api::gastronomy-section.gastronomy-section': ApiGastronomySectionGastronomySection;
       'api::global.global': ApiGlobalGlobal;
+      'api::home-about.home-about': ApiHomeAboutHomeAbout;
+      'api::home-page-meta.home-page-meta': ApiHomePageMetaHomePageMeta;
+      'api::info-article.info-article': ApiInfoArticleInfoArticle;
+      'api::info-section.info-section': ApiInfoSectionInfoSection;
+      'api::meat-categories-section.meat-categories-section': ApiMeatCategoriesSectionMeatCategoriesSection;
+      'api::meat-category.meat-category': ApiMeatCategoryMeatCategory;
+      'api::recommended-product.recommended-product': ApiRecommendedProductRecommendedProduct;
+      'api::recommended-products-section.recommended-products-section': ApiRecommendedProductsSectionRecommendedProductsSection;
+      'api::site-header.site-header': ApiSiteHeaderSiteHeader;
       'api::slider-slide.slider-slide': ApiSliderSlideSliderSlide;
+      'api::stat-counter.stat-counter': ApiStatCounterStatCounter;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

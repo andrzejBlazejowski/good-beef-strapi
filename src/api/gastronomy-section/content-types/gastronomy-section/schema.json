@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "gastronomy_sections",
+  "info": {
+    "singularName": "gastronomy-section",
+    "pluralName": "gastronomy-sections",
+    "displayName": "Gastronomy Section",
+    "description": "Section header and CTAs for B2B products (#ForRestaurants)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "emailButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.cta-button"
+    },
+    "phoneButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.cta-button"
+    }
+  }
+}

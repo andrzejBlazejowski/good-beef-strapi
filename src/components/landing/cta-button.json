@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_landing_cta_buttons",
+  "info": {
+    "displayName": "CTA Button",
+    "icon": "cursor",
+    "description": "Call-to-action button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meat_categories",
+  "info": {
+    "singularName": "meat-category",
+    "pluralName": "meat-categories",
+    "displayName": "Meat Category",
+    "description": "Product category card (Cielęcina, Wołowina, Burgery)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_landing_nav_links",
+  "info": {
+    "displayName": "Nav Link",
+    "icon": "link",
+    "description": "Navigation menu item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

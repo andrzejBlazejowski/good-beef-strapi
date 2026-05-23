@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_ctas",
+  "info": {
+    "singularName": "contact-cta",
+    "pluralName": "contact-ctas",
+    "displayName": "Contact CTA",
+    "description": "Call-to-action banner with phone (#contact)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "phoneLink": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "faq_sections",
+  "info": {
+    "singularName": "faq-section",
+    "pluralName": "faq-sections",
+    "displayName": "FAQ Section",
+    "description": "FAQ section header and decorative images (#FAQ)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mainImageAlt": {
+      "type": "string"
+    },
+    "overlayImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "overlayImageAlt": {
+      "type": "string"
+    }
+  }
+}

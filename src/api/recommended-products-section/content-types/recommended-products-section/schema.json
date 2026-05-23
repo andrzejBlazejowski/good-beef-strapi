@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "recommended_products_sections",
+  "info": {
+    "singularName": "recommended-products-section",
+    "pluralName": "recommended-products-sections",
+    "displayName": "Recommended Products Section",
+    "description": "Section header and CTA for retail products (#prices)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "moreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing.cta-button"
+    }
+  }
+}

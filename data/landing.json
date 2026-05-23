@@ -1,0 +1,377 @@
+{
+  "homePageMeta": {
+    "pageTitle": "Wołowina premium z okolic Kołobrzegu - Good Beef",
+    "metaDescription": "Wołowina premium w sprzedaży wysyłkowej, świeża zdrowa i pyszna",
+    "googleAnalyticsId": "G-C5KVK3N1PW",
+    "seo": {
+      "metaTitle": "Wołowina premium z okolic Kołobrzegu - Good Beef",
+      "metaDescription": "Wołowina premium w sprzedaży wysyłkowej, świeża zdrowa i pyszna"
+    }
+  },
+  "siteHeader": {
+    "logo": "resources/logo_xxs.png",
+    "logoAlt": "Logo good beef",
+    "mapLinkLabel": "Pokaż na mapie",
+    "mapLinkUrl": "https://goo.gl/maps/RwVhb27uY2GsgYmX7",
+    "email": "hello@goodbeef.pl",
+    "phonePrefix": "Zadzwoń do nas:",
+    "phoneNumber": "530 624 129",
+    "navLinks": [
+      { "label": "sklep", "href": "http://shop.goodbeef.pl", "openInNewTab": true, "order": 1 },
+      { "label": "o nas", "href": "#About", "order": 2 },
+      { "label": "informacje", "href": "#Info", "order": 3 },
+      { "label": "Polecane Produkty", "href": "#prices", "order": 4 },
+      { "label": "Dla Gastronomii", "href": "#ForRestaurants", "order": 5 },
+      { "label": "najczęstsze pytania", "href": "#FAQ", "order": 6 },
+      { "label": "produkty", "href": "#products", "order": 7 },
+      { "label": "kontakt", "href": "#contact", "order": 8 }
+    ]
+  },
+  "sliderSlides": [
+    {
+      "title": "Pyszne mięso z własnej hodowli bydła",
+      "image": "slides/wolowina_na_desce1920x710.jpg",
+      "order": 1
+    },
+    {
+      "title": "Zawsze świeża\nwołowina premium",
+      "image": "slides/zebereko_wolowe1920x710.jpg",
+      "order": 2
+    },
+    {
+      "title": "Produkty prosto od lokalnego rolnika",
+      "image": "slides/krowy2_1920x710.png",
+      "order": 3
+    }
+  ],
+  "features": [
+    {
+      "iconClass": "icon-chop",
+      "title": "Pewne żródło",
+      "description": "Kupując u nas masz pewność, że wołowina jest odpowiednio przebadana.",
+      "order": 1
+    },
+    {
+      "iconClass": "icon-meat",
+      "title": "Wolny opas",
+      "description": "Bydło jest hodowane na pastwiskach, dzięki czemu jest zdrowsze.",
+      "order": 2
+    },
+    {
+      "iconClass": "icon-meat-1",
+      "title": "Od lokalnego rolnika",
+      "description": "Produkty od rolnika z okolic Kołobrzegu.",
+      "order": 3
+    }
+  ],
+  "homeAbout": {
+    "subTitle": "O nas",
+    "heading": "Hodowlą bydła zajmujemy się od pokoleń",
+    "content": "Dzięki wieloletniej tradycji wiemy jak dobrze dbać o nasze stadko. Kilka lat temu zauważyliśmy zapotrzebowanie w gronie naszych klientów na świeżą wołowinę wysokiej jakości. Dlatego też za namową rodziny i przyjaciół postanowiliśmy spróbować rozwinąć nasze gospodarstwo w tym kierunku. Tak właśnie powstał Good Beef!\n\nZakład Przetwórstwa Mięsnego Good Beef zlokalizowany w Stramnicy pod Kołobrzegiem posiada w ciągłej sprzedaży młodą wołowinę z rasy limousine. Nasze gospodarstwo położone jest na terenach ekologicznie czystych. Trawy dla naszych krów pozyskujemy z terenów Natura 2000 \"Dolina Rzeki Parsęty\".\n\nW naszej hodowli w sposób maksymalny wykorzystujemy żywienie pastwiskowe. Nasza produkcja prowadzona jest w myśl zasady \"od pola do stołu\", dzięki czemu mogą Państwo zakupić mięso najwyższej jakości.",
+    "mainImage": "about/krowy2_453x453.jpg",
+    "mainImageAlt": "stado krów patrzących na wprost",
+    "overlayValue": "40",
+    "overlayLabel": "Lat doświadczenia"
+  },
+  "infoSection": {
+    "subTitle": "Informacje",
+    "title": "Kilka słów o Uboju i wysyłce"
+  },
+  "infoArticles": [
+    {
+      "title": "Jak kupić wołowine premium?",
+      "content": "Aby zapewnić możliwość zakupu naszych produktów szerszej grupie odbiorców, wprowadziliśmy sprzedaż wysyłkową. Mięso w celu wysyłki jest zapakowane w opakowanie typu termobox ze specjalnym wkładem chłodzącym. Koszt wysyłki przy zamówieniu do kwoty 1000zł kosztuje jedynie 40zł, powyżej 1000zł przesyłka jest darmowa. Nasze produkty mogą Państwo również zakupić na terenie Zakładu w Stramnicy nr 32.",
+      "image": "blog/paczka_590x270.jpg",
+      "imageAlt": "zdjęcie paczki",
+      "order": 1
+    },
+    {
+      "title": "Odpowiedni proces, kluczem do jakości i bezpieczeństwa",
+      "content": "Ubój odbywa się w zaprzyjaźnionej ubojni, dokąd zwierzęta przewożone są własnym transportem z gospodarstwa w Stramnicy. Kolejnego dnia półtusze są przewożone do zakładu rozbioru w Stramnicy. W celu zapewnienia produkcji wysokiej jakości, zakład posiada wdrożony system HACCP.",
+      "image": "blog/cuting_meat_590x270.jpg",
+      "imageAlt": "krojenie kawałka wołowiny",
+      "order": 2
+    }
+  ],
+  "recommendedProductsSection": {
+    "subTitle": "Polecane produkty wołowiny premium",
+    "title": "Ciesz się Wołowiną premium\npochodzącą z pewnego źródła",
+    "description": "Zapraszamy do zapoznania się z naszą ofertą i dokonania zamówień pod numerem telefonu: 530 624 129",
+    "moreButton": {
+      "label": "Zobacz więcej",
+      "href": "https://shop.goodbeef.pl/2-strona-glowna",
+      "openInNewTab": true
+    }
+  },
+  "recommendedProducts": [
+    {
+      "title": "Ligawa wołowa",
+      "priceLabel": "68zł/kg",
+      "image": "products/ligawa-wolowa-270-270.jpg",
+      "imageAlt": "Ligawa wołowa",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/26-ligawa-wolowa.html",
+      "order": 1
+    },
+    {
+      "title": "Antrykot wołowy bez kości",
+      "priceLabel": "85zł/kg",
+      "image": "products/antrykot-wolowy-270-270.jpg",
+      "imageAlt": "Antrykot wołowy bez kości",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/23-antrykot-wolowy.html",
+      "order": 2
+    },
+    {
+      "title": "Rostbef wołowy premium",
+      "priceLabel": "82zł/kg",
+      "image": "products/rostbef-wolowy-premium-270-270.jpg",
+      "imageAlt": "Rostbef wołowy premium",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/37-rostbef-wolowy-premium.html",
+      "order": 3
+    },
+    {
+      "title": "Antrykot wołowy z kością",
+      "priceLabel": "55zł/kg",
+      "image": "products/antrykot-z-koscia-270-270.jpg",
+      "imageAlt": "Antrykot wołowy z kością",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/24-antrykot-wolowy.html",
+      "order": 4
+    },
+    {
+      "title": "Kiełbasa wołowa",
+      "priceLabel": "52zł/kg",
+      "image": "products/kielbasa-wolowa-270-270.jpg",
+      "imageAlt": "Kiełbasa wołowa",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/41-kielbasa-wolowa.html",
+      "order": 5
+    },
+    {
+      "title": "Ogon wołowy",
+      "priceLabel": "34zł/kg",
+      "image": "products/ogow-wolowy-270-270.jpg",
+      "imageAlt": "Ogon wołowy",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/40-ogon-wolowy-1kg.html",
+      "order": 6
+    },
+    {
+      "title": "Karkówka wołowa",
+      "priceLabel": "49,50zł/kg",
+      "image": "products/karkowka-wolowa-270-270.jpg",
+      "imageAlt": "Karkówka wołowa",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/20-karkowka-wolowa.html",
+      "order": 7
+    },
+    {
+      "title": "Udziec wołowy",
+      "priceLabel": "60zł/kg",
+      "image": "products/udziec-wolowy-270-270.jpg",
+      "imageAlt": "Udziec wołowy",
+      "shopUrl": "https://shop.goodbeef.pl/strona-glowna/30-udziec-wolowy.html",
+      "order": 8
+    }
+  ],
+  "gastronomySection": {
+    "subTitle": "Wołowina Premium w ofercie dla Gastronomii",
+    "title": "Zwiększ zainteresowanie sowich klientów Twoją\nofertą dzięki świetnej jakości wołowinie",
+    "description": "Zapraszamy do zapoznania się z naszą ofertą i nawiązanie kontaktu pod numerem telefonu: 530 624 129",
+    "emailButton": {
+      "label": "Napisz do nas: hello@goodbeef.pl",
+      "href": "mailto:hello@goodbeef.pl"
+    },
+    "phoneButton": {
+      "label": "Zadzwoń do nas: 530 624 129",
+      "href": "tel:530624129"
+    }
+  },
+  "gastronomyProducts": [
+    {
+      "title": "Gulasz Wołowy",
+      "priceLabel": "32zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/53-large_default/gulasz-wolowy.jpg",
+      "imageAlt": "Gulasz wołowy",
+      "order": 1
+    },
+    {
+      "title": "Udziec Wołowy",
+      "priceLabel": "40zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/48-large_default/udziec-wolowy.jpg",
+      "imageAlt": "Udziec wołowy",
+      "order": 2
+    },
+    {
+      "title": "Łopatka Wołowa",
+      "priceLabel": "38zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/60-large_default/lopatka-wolowa.jpg",
+      "imageAlt": "Łopatka wołowa",
+      "order": 3
+    },
+    {
+      "title": "Karkówka Wołowa",
+      "priceLabel": "38zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/50-large_default/karkowka-wolowa.jpg",
+      "imageAlt": "Karkówka wołowa",
+      "order": 4
+    },
+    {
+      "title": "Szponder Wołowy",
+      "priceLabel": "28zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/47-large_default/szponder-wolowy.jpg",
+      "imageAlt": "Szponder Wołowy",
+      "order": 5
+    },
+    {
+      "title": "Mięso mielone Wołowe",
+      "priceLabel": "32zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/63-large_default/mieso-wolowe-mielone-na-burgery-8020.jpg",
+      "imageAlt": "Mięso mielone Wołowe",
+      "order": 6
+    },
+    {
+      "title": "Kości Wołowe",
+      "priceLabel": "10zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/44-large_default/kosci-wolowe.jpg",
+      "imageAlt": "Kości Wołowe",
+      "order": 7
+    },
+    {
+      "title": "Burgery Wołowe Mrożone 200g",
+      "priceLabel": "34zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/77-large_default/burgery-wolowe-formowane-mrozone-1kg.jpg",
+      "imageAlt": "Burgery Wołowe Mrożone",
+      "order": 8
+    },
+    {
+      "title": "Gicz Wołowa",
+      "priceLabel": "30zł/kg",
+      "imageUrl": "https://shop.goodbeef.pl/51-large_default/gicz-wolowa.jpg",
+      "imageAlt": "Gicz Wołowa",
+      "order": 9
+    }
+  ],
+  "faqSection": {
+    "subTitle": "FAQ",
+    "title": "Najczęściej\nzadawane pytania:",
+    "mainImage": "resources/zeberka_w_okregu_420x420.jpg",
+    "mainImageAlt": "żeberka ułożone w okrąg",
+    "overlayImage": "resources/zeberka_na_papirusie_320x320.jpg",
+    "overlayImageAlt": "żeberka na papirusie"
+  },
+  "faqItems": [
+    {
+      "question": "Gdzie mogę kupić wołowinę?",
+      "answer": "Możesz złożyć zamówienie na naszym sklepie internetowym [Złóż zamówienie tutaj](https://shop.goodbeef.pl/).\n\nZadzwoń pod numer 530 624 129 w celu złożenia zamówienia. Ustalisz też wtedy czas i miejsce odbioru/dostawy.",
+      "defaultOpen": true,
+      "order": 1
+    },
+    {
+      "question": "Jakie produkty sprzedajecie?",
+      "answer": "W sprzedaży mamy świeżą cielęcinę, młodą wołowinę oraz mięso na burgery.",
+      "order": 2
+    },
+    {
+      "question": "Czy prowadzicie sprzedaż wysyłkową?",
+      "answer": "Tak, prowadzimy sprzedaż wysyłkową. Towar wysyłany jest co środę. W celu zamówienia prosimy o kontakt pod numer telefonu: 530 624 129",
+      "order": 3
+    }
+  ],
+  "meatCategoriesSection": {
+    "subTitle": "Nasze produkty",
+    "title": "Poznaj nasze mięsa"
+  },
+  "meatCategories": [
+    {
+      "title": "Cielęcina",
+      "subtitle": "Zawsze świeża!",
+      "link": "#",
+      "image": "team/cielecina_320x320.jpg.jpg",
+      "imageAlt": "cielęcina",
+      "order": 1
+    },
+    {
+      "title": "Wołowina",
+      "subtitle": "Młoda i świeża",
+      "link": "#",
+      "image": "team/wolowina_na_lodize_320x320.jpg",
+      "imageAlt": "wołowina ułożona na lodzie",
+      "order": 2
+    },
+    {
+      "title": "Mięso na Burgery",
+      "subtitle": "w idealnej konsystencji",
+      "link": "#",
+      "image": "team/burgery_320x320.jpg.jpg",
+      "imageAlt": "zdjęcie burgerów",
+      "order": 3
+    }
+  ],
+  "statCounters": [
+    {
+      "value": 40,
+      "label": "Lat Doświadczenia",
+      "animationFrom": 1,
+      "animationTo": 40,
+      "animationSpeed": 5000,
+      "order": 1
+    },
+    {
+      "value": 100,
+      "label": "Uprawianej ziemi",
+      "animationFrom": 1,
+      "animationTo": 100,
+      "animationSpeed": 5000,
+      "order": 2
+    },
+    {
+      "value": 75,
+      "label": "Krów",
+      "animationFrom": 1,
+      "animationTo": 75,
+      "animationSpeed": 5000,
+      "order": 3
+    },
+    {
+      "value": 37,
+      "label": "Produkty",
+      "animationFrom": 1,
+      "animationTo": 37,
+      "animationSpeed": 5000,
+      "order": 4
+    }
+  ],
+  "contactCta": {
+    "title": "Zadzwoń, aby dowiedzieć\nsię więcej",
+    "phoneNumber": "530 624 129",
+    "phoneLink": "tel:530624129",
+    "backgroundImage": "parallax-background/steki_wolowe_1920_400.jpg"
+  },
+  "contactInfoBoxes": [
+    {
+      "type": "address",
+      "title": "Adres",
+      "content": "Stramnica 32\n78-100 Kołobrzeg",
+      "iconClass": "flaticon-maps-and-flags",
+      "order": 1
+    },
+    {
+      "type": "phone",
+      "title": "Telefon",
+      "content": "530 624 129",
+      "link": "tel:530624129",
+      "iconClass": "flaticon-phone-call-1",
+      "order": 2
+    },
+    {
+      "type": "email",
+      "title": "Email",
+      "content": "hello@goodbeef.pl",
+      "link": "mailto:hello@goodbeef.pl",
+      "iconClass": "flaticon-email",
+      "order": 3
+    }
+  ],
+  "footer": {
+    "brandName": "Good Beef",
+    "brandUrl": "#",
+    "copyrightSuffix": "Wszelkie prawa zastrzeżone",
+    "year": 2022
+  }
+}

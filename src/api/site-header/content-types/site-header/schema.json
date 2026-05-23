@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_headers",
+  "info": {
+    "singularName": "site-header",
+    "pluralName": "site-headers",
+    "displayName": "Site Header",
+    "description": "Header logo, top bar contact info, and navigation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "logoAlt": {
+      "type": "string"
+    },
+    "mapLinkLabel": {
+      "type": "string"
+    },
+    "mapLinkUrl": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phonePrefix": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "navLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.nav-link"
+    }
+  }
+}

@@ -252,6 +252,9 @@ async function importSeedData() {
   await importArticles();
   await importGlobal();
   await importAbout();
+
+  const { seedLandingPage } = require('./seed-landing');
+  await seedLandingPage();
 }
 
 async function main() {
