@@ -20,6 +20,9 @@
       "type": "string",
       "required": true
     },
+    "priceSyncedAt": {
+      "type": "datetime"
+    },
     "image": {
       "type": "media",
       "multiple": false,

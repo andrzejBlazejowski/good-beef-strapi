@@ -11,6 +11,7 @@
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "seed:landing": "node ./scripts/seed-landing.js",
+    "sync:prices": "node ./scripts/sync-recommended-prices.js",
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",

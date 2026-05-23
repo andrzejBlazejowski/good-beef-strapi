@@ -1097,6 +1097,7 @@ export interface ApiRecommendedProductRecommendedProduct
       Schema.Attribute.Private;
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     priceLabel: Schema.Attribute.String & Schema.Attribute.Required;
+    priceSyncedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
     shopUrl: Schema.Attribute.String & Schema.Attribute.Required;
     showBuyButton: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
